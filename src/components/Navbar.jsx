@@ -18,7 +18,7 @@ export const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.screenY > 10);
+            setScrolled(window.scrollY > 10);
         }
         window.addEventListener("scroll", handleScroll)
         return () => window.removeEventListener("scroll", handleScroll)

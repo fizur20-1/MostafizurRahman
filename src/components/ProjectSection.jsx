@@ -1,11 +1,13 @@
 import { ArrowRight, ExternalLink, Github, GithubIcon } from "lucide-react";
 
+const assetBase = import.meta.env.BASE_URL;
+
 const projects=[
     {
         id:1,
         title:"Ecommerce Website",
         description:"This is the first project.",
-        imageUrl:"/projects/Project1.png",
+        imageUrl:`${assetBase}projects/Project1.png`,
         tags:["ASP.NET","js","css","html"],
         githubUrl:"#" // Replace with actual URL
     },
@@ -13,7 +15,7 @@ const projects=[
         id:2,
         title:"Landing Page",
         description:"This is the second project.",
-        imageUrl:"/projects/Project2.png",
+        imageUrl:`${assetBase}projects/Project2.png`,
         tags:["js","css","html"],
         githubUrl:"#" // Replace with actual URL
     },
@@ -21,7 +23,7 @@ const projects=[
         id:3,
         title:"Portfolio Website",
         description:"This is the third project.",
-        imageUrl:"/projects/Project3.png",
+        imageUrl:`${assetBase}projects/Project3.png`,
         tags:["React","js","css","html","tailwind"],
         githubUrl:"#" // Replace with actual URL    
     },
